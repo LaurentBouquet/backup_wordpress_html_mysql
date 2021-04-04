@@ -10,5 +10,5 @@ DOCUMENTS=/var/www/html
 
 [ ! -d "$BACKUP_FOLDER" ] && mkdir --parents $BACKUP_FOLDER
 
-FILE=${BACKUP_FOLDER}/${NOW}-${DOLIBARR_CONTAINER_NAME}-webfiles.gz
+FILE=${BACKUP_FOLDER}/${NOW}-${WORDPRESS_CONTAINER_NAME}-webfiles.gz
 $TAR -czf $FILE $DOCUMENTS
